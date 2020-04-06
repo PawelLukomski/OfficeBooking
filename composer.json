@@ -1,6 +1,6 @@
 {
-    "name": "enigmatic/stats-system",
-    "description": "System for getting stats by viewer webpages.",
+    "name": "pawel/officebooking",
+    "description": "",
     "require": {},
     "autoload": {
         "psr-4": { "": "src/" }

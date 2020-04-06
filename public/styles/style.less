@@ -1,0 +1,242 @@
+// PRIMARY
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .workplace_a {
+    background: green !important;
+  }
+
+  .workplace_b {
+    background: darkred !important;
+    color: #ffffff !important;
+  }
+
+  .workplace_c {
+    background: greenyellow !important;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+
+  //HEADER
+  .header_main {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px 0;
+    background: #3e8542;
+    color: #ffffff;
+
+    //LOGO
+    .header_main_logo {
+      margin-left: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        font-weight: bold;
+        font-size: 2em;
+      }
+    }
+
+    // NAVIGATION
+    .header_main_nav {
+      height: 80px;
+      width: 20%;
+      margin-right: 10%;
+
+      ul {
+        display: flex;
+        height: 80px;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+
+  // WORKPLACE TABLE SUGGESTION SECTION
+  .suggestion_box {
+    width: 100%;
+
+    background: #ffffff;
+    position: relative;
+    box-shadow: 0 0 10px 0;
+    top: 15px;
+    z-index: 99999 !important;
+
+    .workplaceList {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        width: 23%;
+        margin: 1%;
+        height: 100px;
+        background: #b9b9b9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  // MAIN VIEW
+  .content_main {
+    width: 100%;
+    min-height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content_main_view {
+      width: 80%;
+      min-height: 500px;
+      margin: 100px 0;
+
+      background: #eeeeee;
+
+      .addForm {
+        padding: 20px;
+
+        label {
+          font-weight: bold;
+        }
+
+        input, select {
+          margin: 10px 0;
+        }
+      }
+
+      .view_options {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 15px;
+
+        button {
+          background: #3e8542;
+          color: #fff;
+          padding: 10px;
+          border: 2px solid #3a7a3a;
+        }
+
+        .bookForm {
+          width: 50%;
+
+          .formSection {
+            label {
+              font-size: 1.1em;
+              font-weight: bold;
+            }
+
+            input, select {
+              margin: 10px 0;
+            }
+
+            select {
+              width: 200px;
+            }
+          }
+        }
+
+        #equipmentList {
+          width: 50%;
+
+          .equipment_header {
+            h1 {
+              width: 100%;
+              padding: 10px;
+              background: #3e8542;
+              color: #FFFFFF;
+            }
+          }
+
+          ul {
+            margin-left: 30px;
+
+            li {
+              font-weight: bold;
+              padding: 10px 0;
+            }
+          }
+        }
+      }
+
+      .view_header {
+        width: 100%;
+
+        h2 {
+          background: #4CAF50;
+          padding: 15px;
+          font-size: 1.3em;
+          font-weight: bold;
+          color: #ffffff;
+
+
+        }
+      }
+
+      .view_table_main {
+        width: 100%;
+
+        // TABLE
+
+        table {
+
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        table td {
+          text-align: center;
+
+          .searchBox {
+            width: 400px;
+          }
+        }
+
+        table td, table th {
+          border: 2px solid #ddd;
+          padding: 8px;
+
+          .device {
+            display: block;
+
+            z-index: 1 !important;
+            padding: 10px;
+            background: #ddd;
+            border-bottom: 1px solid #b9b9b9;
+          }
+        }
+
+        table tr:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+          background-color: #b9b9b9 !important;
+        }
+
+        table th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #4CAF50;
+          color: white;
+        }
+      }
+    }
+  }
+}

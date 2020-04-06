@@ -1,0 +1,11 @@
+MainParams
+    Routes:true
+    SqlFile:"db.json"
+NavParams
+    Rezerwacje:"/booking"
+    Miejsca Pracy:"/workplace"
+OutOfTemplate
+    searchPlace:"searchplace"
+    workplacemove:"workplacemove"
+    selectWorkplace:"selectworkplace"
+    addBooking:"addbooking"

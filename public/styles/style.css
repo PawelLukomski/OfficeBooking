@@ -1,0 +1,189 @@
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+body * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body .workplace_a {
+  background: green !important;
+}
+body .workplace_b {
+  background: darkred !important;
+  color: #ffffff !important;
+}
+body .workplace_c {
+  background: greenyellow !important;
+}
+body a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+body .header_main {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 0;
+  background: #3e8542;
+  color: #ffffff;
+}
+body .header_main .header_main_logo {
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .header_main .header_main_logo h1 {
+  font-weight: bold;
+  font-size: 2em;
+}
+body .header_main .header_main_nav {
+  height: 80px;
+  width: 20%;
+  margin-right: 10%;
+}
+body .header_main .header_main_nav ul {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+body .suggestion_box {
+  width: 100%;
+  background: #ffffff;
+  position: relative;
+  box-shadow: 0 0 10px 0;
+  top: 15px;
+  z-index: 99999 !important;
+}
+body .suggestion_box .workplaceList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+body .suggestion_box .workplaceList li {
+  width: 23%;
+  margin: 1%;
+  height: 100px;
+  background: #b9b9b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .content_main {
+  width: 100%;
+  min-height: 89vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .content_main .content_main_view {
+  width: 80%;
+  min-height: 500px;
+  margin: 100px 0;
+  background: #eeeeee;
+}
+body .content_main .content_main_view .addForm {
+  padding: 20px;
+}
+body .content_main .content_main_view .addForm label {
+  font-weight: bold;
+}
+body .content_main .content_main_view .addForm input,
+body .content_main .content_main_view .addForm select {
+  margin: 10px 0;
+}
+body .content_main .content_main_view .view_options {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px;
+}
+body .content_main .content_main_view .view_options button {
+  background: #3e8542;
+  color: #fff;
+  padding: 10px;
+  border: 2px solid #3a7a3a;
+}
+body .content_main .content_main_view .view_options .bookForm {
+  width: 50%;
+}
+body .content_main .content_main_view .view_options .bookForm .formSection label {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+body .content_main .content_main_view .view_options .bookForm .formSection input,
+body .content_main .content_main_view .view_options .bookForm .formSection select {
+  margin: 10px 0;
+}
+body .content_main .content_main_view .view_options .bookForm .formSection select {
+  width: 200px;
+}
+body .content_main .content_main_view .view_options #equipmentList {
+  width: 50%;
+}
+body .content_main .content_main_view .view_options #equipmentList .equipment_header h1 {
+  width: 100%;
+  padding: 10px;
+  background: #3e8542;
+  color: #FFFFFF;
+}
+body .content_main .content_main_view .view_options #equipmentList ul {
+  margin-left: 30px;
+}
+body .content_main .content_main_view .view_options #equipmentList ul li {
+  font-weight: bold;
+  padding: 10px 0;
+}
+body .content_main .content_main_view .view_header {
+  width: 100%;
+}
+body .content_main .content_main_view .view_header h2 {
+  background: #4CAF50;
+  padding: 15px;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #ffffff;
+}
+body .content_main .content_main_view .view_table_main {
+  width: 100%;
+}
+body .content_main .content_main_view .view_table_main table {
+  border-collapse: collapse;
+  width: 100%;
+}
+body .content_main .content_main_view .view_table_main table td {
+  text-align: center;
+}
+body .content_main .content_main_view .view_table_main table td .searchBox {
+  width: 400px;
+}
+body .content_main .content_main_view .view_table_main table td,
+body .content_main .content_main_view .view_table_main table th {
+  border: 2px solid #ddd;
+  padding: 8px;
+}
+body .content_main .content_main_view .view_table_main table td .device,
+body .content_main .content_main_view .view_table_main table th .device {
+  display: block;
+  z-index: 1 !important;
+  padding: 10px;
+  background: #ddd;
+  border-bottom: 1px solid #b9b9b9;
+}
+body .content_main .content_main_view .view_table_main table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+body .content_main .content_main_view .view_table_main table tr:hover {
+  background-color: #b9b9b9 !important;
+}
+body .content_main .content_main_view .view_table_main table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

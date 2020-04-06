@@ -1,0 +1,43 @@
+Instalacja linux (Apache2):
+
+	- rozpakuj "OfficeBooking.zip"
+	- plik office.conf skopiuj do "/etc/apache2/sites-available/"
+	- Otwórz plik, znajdź linijki:
+		 DocumentRoot /home/pawel/OfficeBooking/public
+	        <Directory /home/pawel/OfficeBooking/public>
+	- zmien sciezki na sciezke wypakowanego katalogu "[sciezka_do_katalogu]/public" 
+	- W konsoli przejdź do katalogu "/etc/apache2/sites-available/"
+	- upewnij się, że włączony jest moduł Rewrite komendą: "a2enmod rewrite"
+	- komendą: "a2ensite office" włączamy projekt, po czym wpisujemy 
+	"systemctl reloadapache2", aby przeładować serwer
+	- otwieramy plik "hosts" w katalogu "/etc" i w ostatniej linijce dopisujemy 
+	"127.0.0.1 office.l www.office.l"
+	- zapisujemy plik
+	
+	INSTALCJA BAZY DANYCH
+		w katalogu projektu znajduje się plik konfiguracyjny "/config/db.json"
+		"host": podajemy host bazy danych, "username": nazwe uzytkownika,
+		"password": haslo do bazy danych, "database": "nazwe bazy danych"
+		 - zapisujemy plik
+		
+	Aktualizacja bazy danych: plik SQL: zadanie_sql.sql
+	w Konsoli otwieramy katalog: z plikiem bazy danych, komendą:
+	"mysql -u [nazwa uzytkownika] -p [nazwa bazy danych] < zadanie_sql.sql"
+	"Wgrywamy baze danych"	
+
+	Projekt znajdziemy pod adresem "office.l"	
+
+Instalacja na serwerze ftp:
+	INSTALCJA BAZY DANYCH
+		w katalogu projektu znajduje się plik konfiguracyjny "/config/db.json"
+		"host": podajemy host bazy danych, "username": nazwe uzytkownika,
+		"password": haslo do bazy danych, "database": "nazwe bazy danych"
+		 - zapisujemy plik
+	Plik z bazą danych zadanie_sql.sql
+		Można wgrać poprzez PhpMyAdmin poprzez import bazy danych, lub
+		Poprzez konsole po zalogowaniu przez ssh komendą:
+		"mysql -u [nazwa uzytkownika] -p [nazwa bazy danych] < zadanie_sql.sql"
+	
+	Wgrywamy katalog z projektem na serwer. Plik index.php znajduje się w katalogu public
+
+	

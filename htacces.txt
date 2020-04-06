@@ -1,0 +1,14 @@
+:Location /*.php
+Use php72
+:Location
+
+RewriteEngine On
+ 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php/$1 [L]
+AllowOverride All
+Order allow,deny
+Allow from All
+Require all granted
+

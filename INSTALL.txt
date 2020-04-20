@@ -9,7 +9,7 @@ Instalacja linux (Apache2):
 	- W konsoli przejdź do katalogu "/etc/apache2/sites-available/"
 	- upewnij się, że włączony jest moduł Rewrite komendą: "a2enmod rewrite"
 	- komendą: "a2ensite office" włączamy projekt, po czym wpisujemy 
-	"systemctl reloadapache2", aby przeładować serwer
+	"systemctl reload apache2", aby przeładować serwer
 	- otwieramy plik "hosts" w katalogu "/etc" i w ostatniej linijce dopisujemy 
 	"127.0.0.1 office.l www.office.l"
 	- zapisujemy plik

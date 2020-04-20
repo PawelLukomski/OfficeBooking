@@ -1,6 +1,6 @@
 # OfficeBooking
 
-Kod projektu wyświetlanego w zadanie.bootlogistik.pl
+Kod projektu wyświetlanego w http://office.boatbuilding.com.pl/
 
   - Pliki konfiguracyjne do bazy danych: /config/db.json
   - W Klasie src/Controller/HomeController.php znajduje się kod do każdej akcji zawartej w projekcie

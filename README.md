@@ -1,5 +1,11 @@
 # OfficeBooking
 
+To symulacja rezerwacji miejsc pracy.<Br>
+Każde miejsce pracy ma przypisane wyposażenie, które można edytować w zakładce "Miejsca pracy".
+
+W projekcie wykorzystano:<strong> HTML, CSS, JS/jQuery AJAX, PHP</strong>
+
+
 Kod projektu wyświetlanego w http://office.boatbuilding.com.pl/
 
   - Pliki konfiguracyjne do bazy danych: /config/db.json
